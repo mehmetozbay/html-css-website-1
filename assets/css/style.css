@@ -72,7 +72,7 @@
 
 .service .content-box {
   background-color: #f4f3ff;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 h1 {
@@ -89,7 +89,7 @@ h1::after {
   margin: 20px auto 50px;
 }
 
-.row-services .icon {
+.services .icon {
   font-size: 30px;
   margin: 15px auto;
   padding: 15px;
@@ -100,13 +100,141 @@ h1::after {
   color: #ff4d73;
 }
 
-.row-services p {
+.services p {
   font-size: 12px;
   margin-top: 10px;
   color: #777;
   padding: 20px;
 }
 
-.row-services span {
+.services span {
   color: #ff4d73;
+}
+.services .col-md-3:hover {
+  background: #ff4d73;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+.services .col-md-3:hover .icon {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.services .col-md-3:hover p {
+  color: #fff;
+}
+.services .col-md-3:hover span {
+  color: #fff;
+}
+
+.feature h2 {
+  margin-top: 100px;
+  margin-left: 50px;
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.feature h2::after {
+  content: "";
+  background-color: #ff4d73;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 10px 0px 50px;
+}
+.feature ul {
+  margin: 30px 50px;
+  list-style-type: none;
+}
+.feature ul li {
+  line-height: 40px;
+  font-size: 14px;
+  position: relative;
+}
+
+.feature ul li::after {
+  content: "";
+  height: 7px;
+  width: 7px;
+  background: #ff4d73;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: -25px;
+}
+
+.feature img {
+  margin-top: 150px;
+}
+
+/* footer */
+
+.footer h1 {
+  padding-top: 50px;
+}
+
+.footer .content-box {
+  background-color: #f4f3ff;
+  height: 100%;
+  width: 100%;
+}
+.footer .contact-form {
+  padding: 15px;
+  position: relative;
+}
+
+.footer .form-control {
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: none;
+}
+::placeholder {
+  font-size: 12px;
+}
+
+.contact-form .btn-primary {
+  background: #ff4d73;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  position: absolute;
+  right: 0px;
+}
+
+.contact-info .follow {
+  background-color: #fff;
+
+  margin-top: 15px;
+}
+
+.contact-info .fas {
+  margin: 10px;
+  font-size: 20px;
+  color: #ff4d73;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.contact-info span {
+  font-size: 20px;
+  padding-left: 20px;
+  color: #777;
+  font-weight: 200;
+}
+
+.contact-info .fab {
+  margin-left: 20px;
+  color: #ff4d73;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  background: #f4f3ff;
+}
+.copyright hr {
+  margin-top: 50px;
 }
