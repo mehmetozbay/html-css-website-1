@@ -4,6 +4,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
 .header .content-box {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../image/home.jpg);
@@ -177,17 +180,17 @@ h1::after {
 
 .footer .content-box {
   background-color: #f4f3ff;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 .footer .contact-form {
-  padding: 15px;
+  padding: 10px;
   position: relative;
 }
 
 .footer .form-control {
-  margin: 10px;
-  border-radius: 20px;
+  margin: 12px;
+  border-radius: none;
   box-shadow: none;
 }
 ::placeholder {
@@ -201,8 +204,15 @@ h1::after {
   border-radius: 0;
   position: absolute;
   right: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-
+.contact-form .btn-primary:hover {
+  background: transparent;
+  color: #ff4d73;
+  border: 1px solid #ff4d73;
+  transition: 0.6s;
+}
 .contact-info .follow {
   background-color: #fff;
 
@@ -233,8 +243,12 @@ h1::after {
 .copyright {
   text-align: center;
   font-size: 14px;
-  background: #f4f3ff;
+  background-color: #f4f3ff;
 }
 .copyright hr {
-  margin-top: 50px;
+  margin-top: 100px;
+}
+
+.service .feature .footer {
+  margin-top: 10%;
 }
